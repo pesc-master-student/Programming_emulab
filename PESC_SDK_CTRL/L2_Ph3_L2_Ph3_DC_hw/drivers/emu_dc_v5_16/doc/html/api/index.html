@@ -1,0 +1,547 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+   "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+<head>
+<style type="text/css">
+body {margin-top:6.35em; 
+      margin-left:6.35em; 
+      width:62.5em;
+      text-align:justify;
+      font-size:1em; 
+      font-family:"Arial", Serif;
+      color:#000000;}
+
+h1 {font-size:1.125em;
+    font-family:"Arial", Sans-serif;
+    color:#943634;}
+
+p {font-size:inherit;
+   width:62.5em;
+   font-family:inherit;
+   color:inherit;}
+
+ul {font-size:inherit;
+    width:62.5em;
+    font-family:inherit;
+    color:inherit;}
+
+li {width:46.15em;}
+
+.image {position: relative;
+        width: 100%;}
+
+table {border-collapse:collapse;
+       border-spacing:0;
+       caption-side:bottom;
+       border-style:solid;
+       border-width:thin;
+       font-size:1em;
+       width:62.5em;
+       font-family:inherit;
+       color:inherit;}
+
+.title_table {border-collapse:collapse;
+       border-spacing:0;
+       caption-side:bottom;
+       font-size:1em;
+       width:62.5em;
+       border-style:none;}
+
+.title_table_image_cell {border-bottom:thin solid #000000;}
+
+.title_table_design_cell {vertical-align:bottom;
+        font-size:1.875em;
+        text-align:right;
+        border-bottom:thin solid #000000;}
+
+.title_table_date_cell{font-size:1.25em;
+        vertical-align:bottom;
+        text-align:left;
+        border-bottom:thick solid #943634}
+
+.sg_row {font-size:inherit;
+         font-family:inherit;
+         color:inherit;
+         border-style:solid;
+         border-width:thin;}
+
+.sg_cell {margin:0;
+          padding:1em;
+          border-width:inherit;
+          border-style:inherit;
+          font-size:inherit;
+          font-family:inherit;
+          color:inherit;}
+
+.sg_cell_first_row {margin:0;
+          padding:1em;
+          border-width:inherit;
+          border-style:inherit;
+          border-bottom:thick solid #943634;
+          font-size:inherit;
+          font-family:inherit;
+          color:inherit;}
+
+.sg_caption {text-align:left;
+             caption-side:bottom;
+             font-family:inherit;
+             font-size:inherit;}
+</style>
+</head>
+<body>
+<table class="title_table">
+<tr>
+<td class="title_table_image_cell"></td>
+<td class="title_table_design_cell">emu_dc</td>
+</tr>
+<tr>
+<td colspan=2 class="title_table_date_cell"><b></b></td>
+</tr>
+</table>
+<h1>int emu_dc_Initialize(emu_dc* InstancePtr, u16 DeviceId)</h1>
+<p>
+Initialize emu_dc pointer with a specifc instance of the device based device id.
+<br/>
+  @param InstancePtr to be initialized
+<br/>
+  @param DeviceId device id assigned to the device in xparameters.h
+<br/>
+<br/>
+  @return int XST_SUCCESS if initialization is successful
+<br/>
+</p>
+<h1>void emu_dc_voltage_pu_bit_conv2_write(emu_dc *InstancePtr, int Data);</h1>
+<p>
+ Write to voltage_pu_bit_conv2 gateway of emu_dc. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the voltage_pu_bit_conv2 instance to operate on.<br/>
+ @param	Data is value to be written to gateway voltage_pu_bit_conv2.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int emu_dc_voltage_pu_bit_conv2_read(emu_dc *InstancePtr);</h1>
+<p>
+ Read from voltage_pu_bit_conv2 gateway of emu_dc. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the voltage_pu_bit_conv2 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void emu_dc_voltage_pu_bit_conv1_write(emu_dc *InstancePtr, int Data);</h1>
+<p>
+ Write to voltage_pu_bit_conv1 gateway of emu_dc. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the voltage_pu_bit_conv1 instance to operate on.<br/>
+ @param	Data is value to be written to gateway voltage_pu_bit_conv1.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int emu_dc_voltage_pu_bit_conv1_read(emu_dc *InstancePtr);</h1>
+<p>
+ Read from voltage_pu_bit_conv1 gateway of emu_dc. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the voltage_pu_bit_conv1 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void emu_dc_ra_write(emu_dc *InstancePtr, u32 Data);</h1>
+<p>
+ Write to ra gateway of emu_dc. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the ra instance to operate on.<br/>
+ @param	Data is value to be written to gateway ra.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u32 emu_dc_ra_read(emu_dc *InstancePtr);</h1>
+<p>
+ Read from ra gateway of emu_dc. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the ra instance to operate on.<br/>
+<br/>
+ @return	u32<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void emu_dc_polepairs_write(emu_dc *InstancePtr, int Data);</h1>
+<p>
+ Write to polepairs gateway of emu_dc. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the polepairs instance to operate on.<br/>
+ @param	Data is value to be written to gateway polepairs.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int emu_dc_polepairs_read(emu_dc *InstancePtr);</h1>
+<p>
+ Read from polepairs gateway of emu_dc. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the polepairs instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void emu_dc_magnetization_4q_1q_write(emu_dc *InstancePtr, u32 Data);</h1>
+<p>
+ Write to magnetization_4q_1q gateway of emu_dc. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the magnetization_4q_1q instance to operate on.<br/>
+ @param	Data is value to be written to gateway magnetization_4q_1q.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u32 emu_dc_magnetization_4q_1q_read(emu_dc *InstancePtr);</h1>
+<p>
+ Read from magnetization_4q_1q gateway of emu_dc. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the magnetization_4q_1q instance to operate on.<br/>
+<br/>
+ @return	u32<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void emu_dc_kn_write(emu_dc *InstancePtr, int Data);</h1>
+<p>
+ Write to kn gateway of emu_dc. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the kn instance to operate on.<br/>
+ @param	Data is value to be written to gateway kn.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int emu_dc_kn_read(emu_dc *InstancePtr);</h1>
+<p>
+ Read from kn gateway of emu_dc. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the kn instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void emu_dc_k_fnmechtstep_write(emu_dc *InstancePtr, int Data);</h1>
+<p>
+ Write to k_fnmechtstep gateway of emu_dc. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the k_fnmechtstep instance to operate on.<br/>
+ @param	Data is value to be written to gateway k_fnmechtstep.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int emu_dc_k_fnmechtstep_read(emu_dc *InstancePtr);</h1>
+<p>
+ Read from k_fnmechtstep gateway of emu_dc. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the k_fnmechtstep instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void emu_dc_current_pu_bit_conv2_write(emu_dc *InstancePtr, int Data);</h1>
+<p>
+ Write to current_pu_bit_conv2 gateway of emu_dc. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the current_pu_bit_conv2 instance to operate on.<br/>
+ @param	Data is value to be written to gateway current_pu_bit_conv2.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int emu_dc_current_pu_bit_conv2_read(emu_dc *InstancePtr);</h1>
+<p>
+ Read from current_pu_bit_conv2 gateway of emu_dc. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the current_pu_bit_conv2 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void emu_dc_current_pu_bit_conv1_write(emu_dc *InstancePtr, int Data);</h1>
+<p>
+ Write to current_pu_bit_conv1 gateway of emu_dc. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the current_pu_bit_conv1 instance to operate on.<br/>
+ @param	Data is value to be written to gateway current_pu_bit_conv1.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int emu_dc_current_pu_bit_conv1_read(emu_dc *InstancePtr);</h1>
+<p>
+ Read from current_pu_bit_conv1 gateway of emu_dc. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the current_pu_bit_conv1 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void emu_dc_vdc2_write(emu_dc *InstancePtr, int Data);</h1>
+<p>
+ Write to vdc2 gateway of emu_dc. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the vdc2 instance to operate on.<br/>
+ @param	Data is value to be written to gateway vdc2.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int emu_dc_vdc2_read(emu_dc *InstancePtr);</h1>
+<p>
+ Read from vdc2 gateway of emu_dc. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the vdc2 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void emu_dc_vdc1_write(emu_dc *InstancePtr, int Data);</h1>
+<p>
+ Write to vdc1 gateway of emu_dc. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the vdc1 instance to operate on.<br/>
+ @param	Data is value to be written to gateway vdc1.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int emu_dc_vdc1_read(emu_dc *InstancePtr);</h1>
+<p>
+ Read from vdc1 gateway of emu_dc. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the vdc1 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void emu_dc_ts_la_write(emu_dc *InstancePtr, u32 Data);</h1>
+<p>
+ Write to ts_la gateway of emu_dc. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the ts_la instance to operate on.<br/>
+ @param	Data is value to be written to gateway ts_la.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u32 emu_dc_ts_la_read(emu_dc *InstancePtr);</h1>
+<p>
+ Read from ts_la gateway of emu_dc. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the ts_la instance to operate on.<br/>
+<br/>
+ @return	u32<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void emu_dc_ts_tm_write(emu_dc *InstancePtr, int Data);</h1>
+<p>
+ Write to ts_tm gateway of emu_dc. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the ts_tm instance to operate on.<br/>
+ @param	Data is value to be written to gateway ts_tm.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int emu_dc_ts_tm_read(emu_dc *InstancePtr);</h1>
+<p>
+ Read from ts_tm gateway of emu_dc. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the ts_tm instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void emu_dc_ts_tf_write(emu_dc *InstancePtr, u32 Data);</h1>
+<p>
+ Write to ts_tf gateway of emu_dc. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the ts_tf instance to operate on.<br/>
+ @param	Data is value to be written to gateway ts_tf.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>u32 emu_dc_ts_tf_read(emu_dc *InstancePtr);</h1>
+<p>
+ Read from ts_tf gateway of emu_dc. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the ts_tf instance to operate on.<br/>
+<br/>
+ @return	u32<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>void emu_dc_tl_write(emu_dc *InstancePtr, int Data);</h1>
+<p>
+ Write to tl gateway of emu_dc. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the tl instance to operate on.<br/>
+ @param	Data is value to be written to gateway tl.<br/>
+<br/>
+ @return	None.<br/>
+<br/>
+ @note    .<br/>
+<br/>
+</p>
+<h1>int emu_dc_tl_read(emu_dc *InstancePtr);</h1>
+<p>
+ Read from tl gateway of emu_dc. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the tl instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>int emu_dc_tlsum_read(emu_dc *InstancePtr);</h1>
+<p>
+ Read from tlsum gateway of emu_dc. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the tlsum instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>int emu_dc_ia_read(emu_dc *InstancePtr);</h1>
+<p>
+ Read from ia gateway of emu_dc. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the ia instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>int emu_dc_if_x0_read(emu_dc *InstancePtr);</h1>
+<p>
+ Read from if_x0 gateway of emu_dc. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the if_x0 instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>u32 emu_dc_motor_id_read(emu_dc *InstancePtr);</h1>
+<p>
+ Read from motor_id gateway of emu_dc. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the motor_id instance to operate on.<br/>
+<br/>
+ @return	u32<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>int emu_dc_speed_read(emu_dc *InstancePtr);</h1>
+<p>
+ Read from speed gateway of emu_dc. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the speed instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>int emu_dc_te_read(emu_dc *InstancePtr);</h1>
+<p>
+ Read from te gateway of emu_dc. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the te instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>int emu_dc_theta_el_read(emu_dc *InstancePtr);</h1>
+<p>
+ Read from theta_el gateway of emu_dc. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the theta_el instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+<h1>int emu_dc_theta_mech_read(emu_dc *InstancePtr);</h1>
+<p>
+ Read from theta_mech gateway of emu_dc. Assignments are LSB-justified.<br/>
+<br/>
+ @param	InstancePtr is the theta_mech instance to operate on.<br/>
+<br/>
+ @return	int<br/>
+
+ @note    .<br/>
+<br/>
+</p>
+</body>
+</html>

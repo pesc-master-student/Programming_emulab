@@ -1,0 +1,8 @@
+OPTION psf_version = 2.1;
+BEGIN driver testing_clk
+ OPTION supported_peripherals = (testing_clk_v2_0);
+ OPTION driver_state = ACTIVE;
+ OPTION copyfiles = all;
+ OPTION name = testing_clk;
+ OPTION version = 2.0;
+END driver
