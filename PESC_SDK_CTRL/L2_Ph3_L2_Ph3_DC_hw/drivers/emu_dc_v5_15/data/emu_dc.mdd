@@ -1,8 +1,0 @@
-OPTION psf_version = 2.1;
-BEGIN driver emu_dc
- OPTION supported_peripherals = (emu_dc_v5_15);
- OPTION driver_state = ACTIVE;
- OPTION copyfiles = all;
- OPTION name = emu_dc;
- OPTION version = 5.15;
-END driver

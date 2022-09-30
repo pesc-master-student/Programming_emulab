@@ -94,10 +94,11 @@ TODO:
 #include <cstdint>
 #include <types.hpp>
 #include "emu_dc.h"
-#include "HMI.hpp"
 #include "xparameters.h"
 #include <register_array.h>
+
 #include "e_DRIVE_ID.hpp"
+#include "HMI.hpp"
 
 
 extern fp32_t Tsamp;

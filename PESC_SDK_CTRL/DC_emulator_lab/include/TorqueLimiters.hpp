@@ -61,10 +61,10 @@ Key function for torque limiters:
 #include <types.hpp>
 #include <cmath>
 #include <cstdint>
-#include "Constants.hpp"
-
+#include "ConfigParameters.hpp"
 
 #include "ConfigParameters.hpp"
+#include "Constants.hpp"
 extern ConfigParameters Parameters;
 
 struct SpeedParameters

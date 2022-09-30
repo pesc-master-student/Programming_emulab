@@ -262,12 +262,12 @@ TODO:
 
 #include <cmath>
 #include <cstdint>
-#include "HWpar_2L_3Ph_2L_3Ph.h"
 #include "comparator_limiter_registers.h"
 #include <types.hpp>
 
 
 #include "ConfigParameters.hpp"
+#include "HWpar_2L_3Ph_2L_3Ph.h"
 extern ConfigParameters Parameters;
 
 class FW_Tripping {

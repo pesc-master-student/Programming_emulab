@@ -7,8 +7,8 @@
 
 #pragma once
 
-#include "incremental_encoder_interface_registers.h"
 #include "basis_io_picozed7030_based_processor_board.h"
+#include "incremental_encoder_interface_registers.h"
 
 class Encoder {
 public:

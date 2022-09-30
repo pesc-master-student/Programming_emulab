@@ -1,0 +1,194 @@
+11:15:51 **** Build of configuration Debug for project L2_Ph3_L2_Ph3_DC_Drive ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/ADC.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -DFULL -DARM_A9 -DHAS_BASIC_FAULT_LOG_IF_CAPABILITY -DHAS_RUN_INHIBIT_SUPPORT -DHAS_STRNLEN -DHAS_DIGSCOPE_CAPABILITY -Wall -O3 -gdwarf-2 -g -gdwarf-4 -IC:\Programming\TSW_SW\include -I../../L2_Ph3_L2_Ph3_DC_bsp/ps7_cortexa9_1/include -IC:\Programming\TSW_SW\src -c -fmessage-length=0 -MT"src/ADC.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../L2_Ph3_L2_Ph3_DC_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/ADC.d" -MT"src/ADC.o" -o "src/ADC.o" "../src/ADC.cpp"
+'Finished building: ../src/ADC.cpp'
+' '
+'Building file: ../src/Application.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -DFULL -DARM_A9 -DHAS_BASIC_FAULT_LOG_IF_CAPABILITY -DHAS_RUN_INHIBIT_SUPPORT -DHAS_STRNLEN -DHAS_DIGSCOPE_CAPABILITY -Wall -O3 -gdwarf-2 -g -gdwarf-4 -IC:\Programming\TSW_SW\include -I../../L2_Ph3_L2_Ph3_DC_bsp/ps7_cortexa9_1/include -IC:\Programming\TSW_SW\src -c -fmessage-length=0 -MT"src/Application.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../L2_Ph3_L2_Ph3_DC_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/Application.d" -MT"src/Application.o" -o "src/Application.o" "../src/Application.cpp"
+In file included from ../src/Converter.hpp:79,
+                 from ../src/Drive.hpp:83,
+                 from ../src/Application.hpp:86,
+                 from ../src/Application.cpp:9:
+../src/Measurements.hpp:282: warning: "NO_OF_CHANNELS_CNT" redefined
+ #define NO_OF_CHANNELS_CNT 8 // max 8 physical ADC channels
+ 
+In file included from ../src/Converter.hpp:75,
+                 from ../src/Drive.hpp:83,
+                 from ../src/Application.hpp:86,
+                 from ../src/Application.cpp:9:
+../src/GateDriver.hpp:495: note: this is the location of the previous definition
+ #define NO_OF_CHANNELS_CNT XPAR_CONVERTER_1_SWITCHING_EVENT_COUNTER_NUMBER_OF_CHANNELS
+ 
+In file included from ../src/Stopwatch.hpp:4,
+                 from ../src/EnDat22.hpp:142,
+                 from ../src/FirmWare_2L_3ph.hpp:80,
+                 from ../src/Drive.hpp:84,
+                 from ../src/Application.hpp:86,
+                 from ../src/Application.cpp:9:
+../../L2_Ph3_L2_Ph3_DC_bsp/ps7_cortexa9_1/include/xtime_l.h:87:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+'Finished building: ../src/Application.cpp'
+' '
+'Building file: ../src/CommInterface.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -DFULL -DARM_A9 -DHAS_BASIC_FAULT_LOG_IF_CAPABILITY -DHAS_RUN_INHIBIT_SUPPORT -DHAS_STRNLEN -DHAS_DIGSCOPE_CAPABILITY -Wall -O3 -gdwarf-2 -g -gdwarf-4 -IC:\Programming\TSW_SW\include -I../../L2_Ph3_L2_Ph3_DC_bsp/ps7_cortexa9_1/include -IC:\Programming\TSW_SW\src -c -fmessage-length=0 -MT"src/CommInterface.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../L2_Ph3_L2_Ph3_DC_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/CommInterface.d" -MT"src/CommInterface.o" -o "src/CommInterface.o" "../src/CommInterface.cpp"
+'Finished building: ../src/CommInterface.cpp'
+' '
+'Building file: ../src/ConfigParameters.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -DFULL -DARM_A9 -DHAS_BASIC_FAULT_LOG_IF_CAPABILITY -DHAS_RUN_INHIBIT_SUPPORT -DHAS_STRNLEN -DHAS_DIGSCOPE_CAPABILITY -Wall -O3 -gdwarf-2 -g -gdwarf-4 -IC:\Programming\TSW_SW\include -I../../L2_Ph3_L2_Ph3_DC_bsp/ps7_cortexa9_1/include -IC:\Programming\TSW_SW\src -c -fmessage-length=0 -MT"src/ConfigParameters.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../L2_Ph3_L2_Ph3_DC_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/ConfigParameters.d" -MT"src/ConfigParameters.o" -o "src/ConfigParameters.o" "../src/ConfigParameters.cpp"
+../src/ConfigParameters.cpp:217:3: warning: "/*" within comment [-Wcomment]
+  //*********************
+    
+'Finished building: ../src/ConfigParameters.cpp'
+' '
+'Building file: ../src/Converter.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -DFULL -DARM_A9 -DHAS_BASIC_FAULT_LOG_IF_CAPABILITY -DHAS_RUN_INHIBIT_SUPPORT -DHAS_STRNLEN -DHAS_DIGSCOPE_CAPABILITY -Wall -O3 -gdwarf-2 -g -gdwarf-4 -IC:\Programming\TSW_SW\include -I../../L2_Ph3_L2_Ph3_DC_bsp/ps7_cortexa9_1/include -IC:\Programming\TSW_SW\src -c -fmessage-length=0 -MT"src/Converter.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../L2_Ph3_L2_Ph3_DC_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/Converter.d" -MT"src/Converter.o" -o "src/Converter.o" "../src/Converter.cpp"
+In file included from ../src/Converter.hpp:79,
+                 from ../src/Converter.cpp:10:
+../src/Measurements.hpp:282: warning: "NO_OF_CHANNELS_CNT" redefined
+ #define NO_OF_CHANNELS_CNT 8 // max 8 physical ADC channels
+ 
+In file included from ../src/Converter.hpp:75,
+                 from ../src/Converter.cpp:10:
+../src/GateDriver.hpp:495: note: this is the location of the previous definition
+ #define NO_OF_CHANNELS_CNT XPAR_CONVERTER_1_SWITCHING_EVENT_COUNTER_NUMBER_OF_CHANNELS
+ 
+'Finished building: ../src/Converter.cpp'
+' '
+'Building file: ../src/DAC.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -DFULL -DARM_A9 -DHAS_BASIC_FAULT_LOG_IF_CAPABILITY -DHAS_RUN_INHIBIT_SUPPORT -DHAS_STRNLEN -DHAS_DIGSCOPE_CAPABILITY -Wall -O3 -gdwarf-2 -g -gdwarf-4 -IC:\Programming\TSW_SW\include -I../../L2_Ph3_L2_Ph3_DC_bsp/ps7_cortexa9_1/include -IC:\Programming\TSW_SW\src -c -fmessage-length=0 -MT"src/DAC.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../L2_Ph3_L2_Ph3_DC_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/DAC.d" -MT"src/DAC.o" -o "src/DAC.o" "../src/DAC.cpp"
+'Finished building: ../src/DAC.cpp'
+' '
+'Building file: ../src/Drive.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -DFULL -DARM_A9 -DHAS_BASIC_FAULT_LOG_IF_CAPABILITY -DHAS_RUN_INHIBIT_SUPPORT -DHAS_STRNLEN -DHAS_DIGSCOPE_CAPABILITY -Wall -O3 -gdwarf-2 -g -gdwarf-4 -IC:\Programming\TSW_SW\include -I../../L2_Ph3_L2_Ph3_DC_bsp/ps7_cortexa9_1/include -IC:\Programming\TSW_SW\src -c -fmessage-length=0 -MT"src/Drive.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../L2_Ph3_L2_Ph3_DC_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/Drive.d" -MT"src/Drive.o" -o "src/Drive.o" "../src/Drive.cpp"
+In file included from ../src/Converter.hpp:79,
+                 from ../src/Drive.hpp:83,
+                 from ../src/Drive.cpp:12:
+../src/Measurements.hpp:282: warning: "NO_OF_CHANNELS_CNT" redefined
+ #define NO_OF_CHANNELS_CNT 8 // max 8 physical ADC channels
+ 
+In file included from ../src/Converter.hpp:75,
+                 from ../src/Drive.hpp:83,
+                 from ../src/Drive.cpp:12:
+../src/GateDriver.hpp:495: note: this is the location of the previous definition
+ #define NO_OF_CHANNELS_CNT XPAR_CONVERTER_1_SWITCHING_EVENT_COUNTER_NUMBER_OF_CHANNELS
+ 
+In file included from ../src/Stopwatch.hpp:4,
+                 from ../src/EnDat22.hpp:142,
+                 from ../src/FirmWare_2L_3ph.hpp:80,
+                 from ../src/Drive.hpp:84,
+                 from ../src/Drive.cpp:12:
+../../L2_Ph3_L2_Ph3_DC_bsp/ps7_cortexa9_1/include/xtime_l.h:87:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+../src/Drive.cpp: In member function 'void Drive::runState_Operation_Enabled()':
+../src/Drive.cpp:307:9: warning: unused variable 'help1' [-Wunused-variable]
+  fp32_t help1;
+         ^~~~~
+../src/Drive.cpp:308:9: warning: unused variable 'help2' [-Wunused-variable]
+  fp32_t help2;
+         ^~~~~
+../src/Drive.cpp:309:9: warning: unused variable 'help3' [-Wunused-variable]
+  fp32_t help3;
+         ^~~~~
+../src/Drive.cpp: In member function 'const fp32_t Drive::TorqueRefLimitation(fp32_t, fp32_t, fp32_t)':
+../src/Drive.cpp:395:9: warning: variable 'IfLim' set but not used [-Wunused-but-set-variable]
+  fp32_t IfLim;
+         ^~~~~
+'Finished building: ../src/Drive.cpp'
+' '
+'Building file: ../src/DriveRoutineFast.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -DFULL -DARM_A9 -DHAS_BASIC_FAULT_LOG_IF_CAPABILITY -DHAS_RUN_INHIBIT_SUPPORT -DHAS_STRNLEN -DHAS_DIGSCOPE_CAPABILITY -Wall -O3 -gdwarf-2 -g -gdwarf-4 -IC:\Programming\TSW_SW\include -I../../L2_Ph3_L2_Ph3_DC_bsp/ps7_cortexa9_1/include -IC:\Programming\TSW_SW\src -c -fmessage-length=0 -MT"src/DriveRoutineFast.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../L2_Ph3_L2_Ph3_DC_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/DriveRoutineFast.d" -MT"src/DriveRoutineFast.o" -o "src/DriveRoutineFast.o" "../src/DriveRoutineFast.cpp"
+In file included from ../src/Converter.hpp:79,
+                 from ../src/Drive.hpp:83,
+                 from ../src/Application.hpp:86,
+                 from ../src/DriveRoutineFast.hpp:73,
+                 from ../src/DriveRoutineFast.cpp:11:
+../src/Measurements.hpp:282: warning: "NO_OF_CHANNELS_CNT" redefined
+ #define NO_OF_CHANNELS_CNT 8 // max 8 physical ADC channels
+ 
+In file included from ../src/Converter.hpp:75,
+                 from ../src/Drive.hpp:83,
+                 from ../src/Application.hpp:86,
+                 from ../src/DriveRoutineFast.hpp:73,
+                 from ../src/DriveRoutineFast.cpp:11:
+../src/GateDriver.hpp:495: note: this is the location of the previous definition
+ #define NO_OF_CHANNELS_CNT XPAR_CONVERTER_1_SWITCHING_EVENT_COUNTER_NUMBER_OF_CHANNELS
+ 
+In file included from ../src/Stopwatch.hpp:4,
+                 from ../src/EnDat22.hpp:142,
+                 from ../src/FirmWare_2L_3ph.hpp:80,
+                 from ../src/Drive.hpp:84,
+                 from ../src/Application.hpp:86,
+                 from ../src/DriveRoutineFast.hpp:73,
+                 from ../src/DriveRoutineFast.cpp:11:
+../../L2_Ph3_L2_Ph3_DC_bsp/ps7_cortexa9_1/include/xtime_l.h:87:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+'Finished building: ../src/DriveRoutineFast.cpp'
+' '
+'Building file: ../src/Emulator.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -DFULL -DARM_A9 -DHAS_BASIC_FAULT_LOG_IF_CAPABILITY -DHAS_RUN_INHIBIT_SUPPORT -DHAS_STRNLEN -DHAS_DIGSCOPE_CAPABILITY -Wall -O3 -gdwarf-2 -g -gdwarf-4 -IC:\Programming\TSW_SW\include -I../../L2_Ph3_L2_Ph3_DC_bsp/ps7_cortexa9_1/include -IC:\Programming\TSW_SW\src -c -fmessage-length=0 -MT"src/Emulator.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../L2_Ph3_L2_Ph3_DC_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/Emulator.d" -MT"src/Emulator.o" -o "src/Emulator.o" "../src/Emulator.cpp"
+In file included from ../src/HMI.hpp:77,
+                 from ../src/Emulator.hpp:97,
+                 from ../src/Emulator.cpp:11:
+../src/Measurements.hpp:282: warning: "NO_OF_CHANNELS_CNT" redefined
+ #define NO_OF_CHANNELS_CNT 8 // max 8 physical ADC channels
+ 
+In file included from ../src/HMI.hpp:74,
+                 from ../src/Emulator.hpp:97,
+                 from ../src/Emulator.cpp:11:
+../src/GateDriver.hpp:495: note: this is the location of the previous definition
+ #define NO_OF_CHANNELS_CNT XPAR_CONVERTER_1_SWITCHING_EVENT_COUNTER_NUMBER_OF_CHANNELS
+ 
+'Finished building: ../src/Emulator.cpp'
+' '
+'Building file: ../src/EnDat22.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -DFULL -DARM_A9 -DHAS_BASIC_FAULT_LOG_IF_CAPABILITY -DHAS_RUN_INHIBIT_SUPPORT -DHAS_STRNLEN -DHAS_DIGSCOPE_CAPABILITY -Wall -O3 -gdwarf-2 -g -gdwarf-4 -IC:\Programming\TSW_SW\include -I../../L2_Ph3_L2_Ph3_DC_bsp/ps7_cortexa9_1/include -IC:\Programming\TSW_SW\src -c -fmessage-length=0 -MT"src/EnDat22.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../L2_Ph3_L2_Ph3_DC_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/EnDat22.d" -MT"src/EnDat22.o" -o "src/EnDat22.o" "../src/EnDat22.cpp"
+In file included from ../src/HMI.hpp:77,
+                 from ../src/EnDat22.cpp:9:
+../src/Measurements.hpp:282: warning: "NO_OF_CHANNELS_CNT" redefined
+ #define NO_OF_CHANNELS_CNT 8 // max 8 physical ADC channels
+ 
+In file included from ../src/HMI.hpp:74,
+                 from ../src/EnDat22.cpp:9:
+../src/GateDriver.hpp:495: note: this is the location of the previous definition
+ #define NO_OF_CHANNELS_CNT XPAR_CONVERTER_1_SWITCHING_EVENT_COUNTER_NUMBER_OF_CHANNELS
+ 
+In file included from ../src/Stopwatch.hpp:4,
+                 from ../src/EnDat22.hpp:142,
+                 from ../src/EnDat22.cpp:8:
+../../L2_Ph3_L2_Ph3_DC_bsp/ps7_cortexa9_1/include/xtime_l.h:87:70: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+                                                                      ^
+'Finished building: ../src/EnDat22.cpp'
+' '
+'Building file: ../src/Encoder.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -DFULL -DARM_A9 -DHAS_BASIC_FAULT_LOG_IF_CAPABILITY -DHAS_RUN_INHIBIT_SUPPORT -DHAS_STRNLEN -DHAS_DIGSCOPE_CAPABILITY -Wall -O3 -gdwarf-2 -g -gdwarf-4 -IC:\Programming\TSW_SW\include -I../../L2_Ph3_L2_Ph3_DC_bsp/ps7_cortexa9_1/include -IC:\Programming\TSW_SW\src -c -fmessage-length=0 -MT"src/Encoder.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../L2_Ph3_L2_Ph3_DC_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/Encoder.d" -MT"src/Encoder.o" -o "src/Encoder.o" "../src/Encoder.cpp"
+'Finished building: ../src/Encoder.cpp'
+' '
+'Building file: ../src/Exception.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -DFULL -DARM_A9 -DHAS_BASIC_FAULT_LOG_IF_CAPABILITY -DHAS_RUN_INHIBIT_SUPPORT -DHAS_STRNLEN -DHAS_DIGSCOPE_CAPABILITY -Wall -O3 -gdwarf-2 -g -gdwarf-4 -IC:\Programming\TSW_SW\include -I../../L2_Ph3_L2_Ph3_DC_bsp/ps7_cortexa9_1/include -IC:\Programming\TSW_SW\src -c -fmessage-length=0 -MT"src/Exception.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../L2_Ph3_L2_Ph3_DC_bsp/ps7_cortexa9_1/include -MMD -MP -MF"src/Exception.d" -MT"src/Exception.o" -o "src/Exception.o" "../src/Exception.cpp"
+../src/Exception.cpp:2:10: fatal error: Io.hpp: No such file or directory
+ #include "Io.hpp"
+          ^~~~~~~~
+compilation terminated.
+make: *** [src/subdir.mk:116: src/Exception.o] Error 1
+
+11:15:57 Build Finished (took 5s.579ms)
+

@@ -1,0 +1,22 @@
+{
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0.19  2019-03-26 bk=1.5019 VDI=41 GEI=35 GUI=JA:9.0 non-TLS
+#  -string -flagsOSRD
+preplace portBus driver_signals -pg 1 -lvl 0 -x 0 -y 50 -defaultsOSRD
+preplace portBus dout -pg 1 -lvl 3 -x 470 -y 260 -defaultsOSRD
+preplace inst xlslice_2 -pg 1 -lvl 1 -x 120 -y 50 -defaultsOSRD
+preplace inst xlslice_3 -pg 1 -lvl 1 -x 120 -y 250 -defaultsOSRD
+preplace inst xlslice_4 -pg 1 -lvl 1 -x 120 -y 350 -defaultsOSRD
+preplace inst xlconstant_7 -pg 1 -lvl 1 -x 120 -y 150 -defaultsOSRD
+preplace inst xlconcat_0 -pg 1 -lvl 2 -x 340 -y 260 -defaultsOSRD
+preplace netloc xlslice_2_Dout 1 1 1 230J 50n
+preplace netloc xlslice_3_Dout 1 1 1 NJ 250
+preplace netloc xlslice_4_Dout 1 1 1 230J 290n
+preplace netloc xlconstant_7_dout 1 1 1 220 150n
+preplace netloc driver_interface_2_driver_signals 1 0 1 20 50n
+preplace netloc xlconcat_0_dout 1 2 1 N 260
+levelinfo -pg 1 0 120 340 470
+pagesize -pg 1 -db -bbox -sgen -170 -10 590 410
+"
+}
+0

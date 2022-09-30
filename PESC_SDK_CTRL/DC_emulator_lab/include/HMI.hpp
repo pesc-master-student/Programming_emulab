@@ -71,13 +71,13 @@ TODO:
 
 #include "ADC.hpp"
 #include "DAC.hpp"
-#include "GateDriver.hpp"
+#include "Filter.hpp"
 #include "FW_Tripping.hpp"
+#include "GateDriver.hpp"
 #include "HysteresisAmpRegulator.hpp"
 #include "Measurements.hpp"
-#include "Relay.hpp"
-#include "Filter.hpp"
 #include "Multiplexer.hpp"
+#include "Relay.hpp"
 
 
 class HMI {

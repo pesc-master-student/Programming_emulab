@@ -1,0 +1,15 @@
+##############################################################################
+## Filename:          J:\DOK\12\KLJ\MIKROPRO\Xilinx\Edk_user_repository\MyProcessorIPLib/drivers/comparator_limiter_block_v1_00_a/data/comparator_limiter_blockk_v2_1_0.mdd
+## Description:       Microprocessor Driver Definition
+## Date:              Tue Oct 13 09:21:50 2009 (by Create and Import Peripheral Wizard)
+##############################################################################
+
+OPTION psf_version = 2.1.0;
+
+BEGIN DRIVER comparator_limiter_block
+
+  OPTION supported_peripherals = (comparator_limiter_block);
+  OPTION depends = (common_v1_00_a);
+  OPTION copyfiles = all;
+
+END DRIVER

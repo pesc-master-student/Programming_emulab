@@ -83,15 +83,15 @@ TODO:
 #include <cmath>
 #include <cstdint>
 #include <types.hpp>
-#include "Drive.hpp"
-#include "Converter.hpp"
-#include "FirmWare_2L_3ph.hpp"
-#include "RampFilter.hpp"
-#include "LPFilter1.hpp"
-#include "PI_controller.hpp"
-//#include "CAN.hpp"
+#include "ConfigParameters.hpp"
 
 #include "ConfigParameters.hpp"
+#include "Converter.hpp"
+#include "Drive.hpp"
+#include "FirmWare_2L_3ph.hpp"
+#include "LPFilter1.hpp"
+#include "PI_controller.hpp"
+#include "RampFilter.hpp"
 extern ConfigParameters Parameters;
 
 

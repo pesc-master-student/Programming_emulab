@@ -3,11 +3,11 @@
 #include <types.hpp>
 #include <cmath>
 #include <cstdint>
-#include "constants.hpp"
 #include <xparameters.h>
-#include "HWpar_2L_3Ph_2L_3Ph.h"
-#include "basis_io_picozed7030_based_processor_board.h"
 #include <pulse_width_modulator_registers.h>
+#include "basis_io_picozed7030_based_processor_board.h"
+#include "Constants.hpp"
+#include "HWpar_2L_3Ph_2L_3Ph.h"
 
 
 class PWM_2L_3ph {

@@ -70,15 +70,16 @@ TODO:
 #pragma once
 
 
-#include "Application.hpp"
-#include "Drive.hpp"
 #include <types.hpp>
-#include "PWM_2L_3ph.hpp"
+
+#include "Application.hpp"
+#include "Constants.hpp"
+#include "Converter.hpp"
+#include "Drive.hpp"
 #include "FirmWare_2L_3ph.hpp"
 #include "GPIO.hpp"
-#include "Converter.hpp"
-#include "Constants.hpp"
 #include "HMI.hpp"
+#include "PWM_2L_3ph.hpp"
 
 
 

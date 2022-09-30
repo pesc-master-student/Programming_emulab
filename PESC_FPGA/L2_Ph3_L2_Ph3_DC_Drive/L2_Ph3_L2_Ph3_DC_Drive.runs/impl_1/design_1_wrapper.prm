@@ -1,0 +1,11 @@
+===================================
+Configuration Memory information
+===================================
+File Format        BIN
+Interface          SMAPX32
+Size               8M
+Start Address      0x00000000
+End Address        0x007FFFFF
+
+Addr1         Addr2         Date                    File(s)
+0x00000000    0x005B3F0B    Aug 30 14:24:07 2022    design_1_wrapper.bit

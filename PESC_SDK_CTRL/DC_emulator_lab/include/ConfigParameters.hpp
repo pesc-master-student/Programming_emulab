@@ -71,12 +71,12 @@ Key modules
 
 #include <types.hpp>
 
-#include "SystemParameters.hpp"
-#include "FirmWareParameters.hpp"
+#include "AppParameters.hpp"
 #include "ConverterParameters.hpp"
 #include "DriveParameters.hpp"
-#include "AppParameters.hpp"
+#include "FirmWareParameters.hpp"
 #include "LoadParameters.hpp"
+#include "SystemParameters.hpp"
 
 struct ConfigParameters {
 	SystemParameters      System1;

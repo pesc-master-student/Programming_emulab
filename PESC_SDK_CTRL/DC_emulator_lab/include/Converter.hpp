@@ -71,14 +71,15 @@ TODO:
 #include <cmath>
 #include <cstdint>
 #include <types.hpp>
-#include "PWM_2L_3ph.hpp"
-#include "GateDriver.hpp"
-#include "SetBit.hpp"
-#include "FW_Tripping.hpp"
+
 #include "Filter.hpp"
-#include "Measurements.hpp"
-#include "HysteresisAmpRegulator.hpp"
+#include "FW_Tripping.hpp"
+#include "GateDriver.hpp"
 #include "HMI.hpp"
+#include "HysteresisAmpRegulator.hpp"
+#include "Measurements.hpp"
+#include "PWM_2L_3ph.hpp"
+#include "SetBit.hpp"
 
 extern HMI hmi;
 

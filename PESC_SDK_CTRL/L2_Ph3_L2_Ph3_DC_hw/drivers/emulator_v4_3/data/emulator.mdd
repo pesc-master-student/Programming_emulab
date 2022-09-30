@@ -1,8 +1,0 @@
-OPTION psf_version = 2.1;
-BEGIN driver emulator
- OPTION supported_peripherals = (emulator_v4_3);
- OPTION driver_state = ACTIVE;
- OPTION copyfiles = all;
- OPTION name = emulator;
- OPTION version = 4.3;
-END driver

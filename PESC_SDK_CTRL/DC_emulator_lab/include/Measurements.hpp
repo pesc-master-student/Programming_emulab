@@ -272,11 +272,11 @@ TODO:
 #include <cmath>
 #include <cstdint>
 #include <types.hpp>
-#include "HWpar_2L_3Ph_2L_3Ph.h"
 #include <register_array.h>
 
 
 #include "ConfigParameters.hpp"
+#include "HWpar_2L_3Ph_2L_3Ph.h"
 extern ConfigParameters Parameters;
 
 #define NO_OF_CHANNELS_CNT 8 // max 8 physical ADC channels

@@ -68,16 +68,17 @@ TODO:
 
 #pragma once
 
-#include "Converter.hpp"
 #include <types.hpp>
+
 #include "ADC.hpp"
-#include "Relay.hpp"
+#include "Converter.hpp"
 #include "Emulator.hpp"
 #include "Encoder.hpp"
-#include "../src/SwLoadEmulator.hpp"
+#include "EnDat22.hpp"
 #include "HMI.hpp"
 #include "Multiplexer.hpp"
-#include "EnDat22.hpp"
+#include "Relay.hpp"
+#include "../src/SwLoadEmulator.hpp"
 
 extern HMI hmi;
 extern DAC m_DAC;

@@ -1,0 +1,172 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Thu Jul 21 11:44:39 2022
+| Host         : NTNU13875 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z030sbg485-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_emu_dc_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_emu_dc_0_1 from PESC_NTNU:SysGen:emu_dc:5.15 (Rev. 248879706) to PESC_NTNU:SysGen:emu_dc:5.16 (Rev. 289309423)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Fri Apr  9 13:16:43 2021
+| Host         : NTNU13875 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z030sbg485-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_emu_dc_0_1'
+
+1. Summary
+----------
+
+SUCCESS in the upgrade of design_1_emu_dc_0_1 from PESC_NTNU:SysGen:emu_dc:5.13 (Rev. 244253057) to PESC_NTNU:SysGen:emu_dc:5.15 (Rev. 248879706)
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Mon Feb 15 00:08:19 2021
+| Host         : NTNU13875 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z030sbg485-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_emu_dc_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_emu_dc_0_1 from PESC_NTNU:SysGen:emu_dc:5.12 (Rev. 244252751) to PESC_NTNU:SysGen:emu_dc:5.13 (Rev. 244253057)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'design_1_emu_dc_0_1'.
+
+
+-Upgrade has removed interface 'magnetization_4q_1q'
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_emu_dc_0_1'. These changes may impact your design.
+
+
+-Upgrade has removed port 'magnetization_4q_1q'
+
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Mon Feb 15 00:05:32 2021
+| Host         : NTNU13875 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z030sbg485-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_emu_dc_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_emu_dc_0_1 from PESC_NTNU:SysGen:emu_dc:5.00 (Rev. 234809778) to PESC_NTNU:SysGen:emu_dc:5.12 (Rev. 244252751)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'design_1_emu_dc_0_1'.
+
+
+-Upgrade has added interface 'magnetization_4q_1q' (xilinx.com:signal:data:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_emu_dc_0_1'. These changes may impact your design.
+
+
+-Upgrade has added port 'magnetization_4q_1q'
+
+
+
+
+
+
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.1 (win64) Build 2552052 Fri May 24 14:49:42 MDT 2019
+| Date         : Wed Oct 28 16:56:57 2020
+| Host         : DESKTOP-EC9A3K0 running 64-bit major release  (build 9200)
+| Command      : upgrade_ip
+| Device       : xc7z030sbg485-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'design_1_emu_dc_0_1'
+
+1. Summary
+----------
+
+CAUTION (success, with warnings) in the upgrade of design_1_emu_dc_0_1 from PESC_NTNU:SysGen:emu_dc:4.99 (Rev. 228684998) to PESC_NTNU:SysGen:emu_dc:5.00 (Rev. 234809778)
+
+After upgrade, an IP may have parameter and port differences compared to the original customization. Please review the parameters within the IP customization GUI to ensure proper functionality. Also, please review the updated IP instantiation template to ensure proper connectivity, and update your design if required.
+
+2. Interface Information
+------------------------
+
+Detected external interface differences while upgrading 'design_1_emu_dc_0_1'.
+
+
+-Upgrade has removed interface 'theta_dac'
+
+-Upgrade has added interface 'theta_el_dac' (xilinx.com:signal:data:1.0)
+
+-Upgrade has added interface 'theta_mech_dac' (xilinx.com:signal:data:1.0)
+
+-Upgrade has added interface 'theta_sync_sampl' (xilinx.com:signal:data:1.0)
+
+
+3. Connection Warnings
+----------------------
+
+Detected external port differences while upgrading 'design_1_emu_dc_0_1'. These changes may impact your design.
+
+
+-Upgrade has removed port 'theta_dac'
+
+-Upgrade has added port 'theta_el_dac'
+
+-Upgrade has added port 'theta_mech_dac'
+
+-Upgrade has added port 'theta_sync_sampl'
+
+

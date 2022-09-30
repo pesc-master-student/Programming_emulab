@@ -1,0 +1,14 @@
+##############################################################################
+## Filename:          J:\DOK\12\KLJ\MIKROPRO\Xilinx\Edk_user_repository\MyProcessorIPLib/drivers/filter_block_v1_00_a/data/filter_block_v2_1_0.mdd
+## Description:       Microprocessor Driver Definition
+## Date:              Thu Feb 28 13:46:04 2013 
+##############################################################################
+
+OPTION psf_version = 2.1.0;
+
+BEGIN DRIVER filter_block
+
+	OPTION supported_peripherals = (filter_block);
+	OPTION depends = (common_v1_00_a);
+	OPTION copyfiles = all;
+END DRIVER

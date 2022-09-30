@@ -79,14 +79,15 @@ Key modules
 #include <types.hpp>
 #include <cmath>
 #include <cstdint>
+
+#include "ConfigParameters.hpp"
 #include "Constants.hpp"
 #include "Converter.hpp"
+#include "e_DRIVE_ID.hpp"
 #include "FirmWare_2L_3ph.hpp"
+#include "Motor.hpp"
 #include "PI_controller.hpp"
 #include "TorqueLimiters.hpp"
-#include "Motor.hpp"
-#include "e_DRIVE_ID.hpp"
-#include "ConfigParameters.hpp"
 
 extern ConfigParameters Parameters;
 extern const enum Multiplexer::e_modus PhysicalMode;
