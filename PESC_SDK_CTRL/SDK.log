@@ -1,0 +1,6 @@
+09:59:10 INFO  : Registering command handlers for SDK TCF services
+09:59:11 INFO  : Launching XSCT server: xsct.bat -interactive C:\Programming\PESC_SDK_CTRL\temp_xsdb_launch_script.tcl
+09:59:13 INFO  : XSCT server has started successfully.
+09:59:13 INFO  : Successfully done setting XSCT server connection channel  
+09:59:13 INFO  : Successfully done setting SDK workspace  
+10:01:06 ERROR : The Hardware Project referenced by this BSP (L2_Ph3_L2_Ph3_DC_bsp) was not found in this workspace. As a result, this BSP will not build properly. To fix this error, please import the associated hardware project or recreate a new BSP targeting an existing hardware platform.
