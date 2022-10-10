@@ -1,5 +1,5 @@
 #ifndef SIMULINK
-  #include "../include/ConfigParameters.hpp"
+  #include "ConfigParameters.hpp"
   extern ConfigParameters Parameters;
 #endif
 
@@ -14,17 +14,17 @@ void LoadEmulator::Initialize(void){
 	m_PumpData.k_L			= Parameters.Load1.Pump.k_L;
 	m_PumpData.t_constant	= Parameters.Load1.Pump.t_constant;
 
-	m_EVData.m       			= Parameters.Load1.EV.m;
-	m_EVData.rho     			= Parameters.Load1.EV.rho;
-	m_EVData.G       			= Parameters.Load1.EV.G;
-	m_EVData.r 					= Parameters.Load1.EV.r;
-	m_EVData.friction 			= Parameters.Load1.EV.friction;
-    m_EVData.Cw     			= Parameters.Load1.EV.Cw;
-    m_EVData.A_car      		= Parameters.Load1.EV.A_car;
-    m_EVData.i_gear  			= Parameters.Load1.EV.i_gear;
-    m_EVData.gear_efficiency 	= Parameters.Load1.EV.gear_efficiency;
-    m_EVData.velocity_lim_0 	= Parameters.Load1.EV.velocity_lim_0;
-    m_EVData.velocity_lim_1 	= Parameters.Load1.EV.velocity_lim_1;
+	m_EVData.m       	= Parameters.Load1.EV.m;
+	m_EVData.rho     	= Parameters.Load1.EV.rho;
+	m_EVData.G       	= Parameters.Load1.EV.G;
+	m_EVData.r 			= Parameters.Load1.EV.r;
+	m_EVData.friction 	= Parameters.Load1.EV.friction;
+    m_EVData.Cw     	= Parameters.Load1.EV.Cw;
+    m_EVData.A_car      = Parameters.Load1.EV.A_car;
+    m_EVData.i_gear  	= Parameters.Load1.EV.i_gear;
+    m_EVData.gear_efficiency 		= Parameters.Load1.EV.gear_efficiency;
+    m_EVData.velocity_lim_0 		= Parameters.Load1.EV.velocity_lim_0;
+    m_EVData.velocity_lim_1 		= Parameters.Load1.EV.velocity_lim_1;
 
     m_ElevatorData.m_elevator 		= Parameters.Load1.Elevator.mass_elevator;
     m_ElevatorData.m_load 			= Parameters.Load1.Elevator.mass_load;

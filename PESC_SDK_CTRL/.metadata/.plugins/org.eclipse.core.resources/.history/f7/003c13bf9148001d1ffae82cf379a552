@@ -1,7 +1,11 @@
 #ifndef LOAD_EMULATOR_HPP_INCLUDED
 #define LOAD_EMULATOR_HPP_INCLUDED
 
-#include <types.hpp>
+#include <cstdint>
+#include <stdint.h>
+#include <cmath>
+
+#define _PARAMS(paramlist)		paramlist
 
 #ifdef SIMULINK // **** Only required for MATLAB/Simulink ****
   // Included in types.hpp
@@ -20,44 +24,24 @@
   const fp32_t M_1_DIV_3  		= 1.0/3.0;
 #endif // **** EOF required for MATLAB/Simulink ****
 
-enum class LoadType {
-	Pump				= 0,
-	ElectricVehicle		= 1,
-	ShipPropulsion		= 2,
-	WindPower			= 3,
-	HydroPower			= 4,
-	Elevator			= 5
+enum class LoadType
+{
+	Pump							= 0,
+	ElectricVehicle			        = 1,
+	ShipPropulsion					= 2,
+	WindPower						= 3,
+	HydroPower						= 4
 };
 
-struct PumpDataStruct {
+struct PumpDataStruct
+{
 	fp32_t k_L;
 	fp32_t t_constant;
 };
 
-struct EVDataStruct {
-	fp32_t m;
-	fp32_t rho;
-	fp32_t G;
-	fp32_t r;
-	fp32_t friction;
-	fp32_t Cw;
-	fp32_t A_car;
-	fp32_t i_gear;
-	fp32_t gear_efficiency;
-	fp32_t velocity_lim_0;
-	fp32_t velocity_lim_1;
-};
 
-struct ElevatorDataStruct {
-	fp32_t m_elevator;
-	fp32_t m_load;
-	fp32_t i_gear;
-	fp32_t gear_efficiency;
-	fp32_t p_0;
-	fp32_t p_1;
-};
-
-class LoadEmulator {
+class LoadEmulator
+{
 public:
 	void Initialize(void);
 	fp32_t& Run(const fp32_t& ActualSpeed_pu);
@@ -71,14 +55,11 @@ public:
 	  void setSig1(const fp32_t signal);
 	  fp32_t getSineWaves(void);
 	#endif // **** EOF required for MATLAB/Simulink ****
-
 private:
 	const fp32_t RunPump(const fp32_t ActSpeed_pu);
 
-	LoadType 			m_LoadType;
-	PumpDataStruct 		m_PumpData;
-	EVDataStruct 		m_EVData;
-	ElevatorDataStruct 	m_ElevatorData;
+	LoadType 		m_LoadType;
+	PumpDataStruct 	m_PumpData;
 
 	fp32_t m_T_load_Nm;
 
@@ -87,11 +68,11 @@ private:
 	bool   b_in_limit;
 	bool   b_input_reached;
 
-	#ifdef SIMULINK // **** Only required for MATLAB/Simulink ****
+    #ifdef SIMULINK // **** Only required for MATLAB/Simulink ****
 	  fp32_t param_var[3];
 	  fp32_t input_sig0;
 	  fp32_t input_sig1;
-	#endif // **** EOF required for MATLAB/Simulink ****
+    #endif // **** EOF required for MATLAB/Simulink ****
 
 };
 

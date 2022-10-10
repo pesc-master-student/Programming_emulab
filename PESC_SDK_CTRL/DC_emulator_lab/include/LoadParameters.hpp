@@ -4,50 +4,50 @@
 #include <cmath>
 #include <cstdint>
 
-struct LoadParameters
-{
+struct LoadParameters {
 	uint16_t LoadType;
 
-	struct PumpStruct
-	{
+	struct PumpStruct {
 		fp32_t k_L;
 		fp32_t t_constant;
-	}Pump;
+	} Pump;
 
-	struct ElectricVehicleStruct
-		{
-			fp32_t Kp;			                // Gain in pu for speed controller
-			fp32_t Ti;			                // Integral time constant [s]
-			fp32_t Ta;			                // Filter time constant (not in use)
-			fp32_t Kv;			                // Feedforward gain. Usually 0 or 1 in our applications
+	struct ElectricVehicleStruct {
+		fp32_t m;			                // Mass of the car in [kg]
+		fp32_t rho;							// Air density [kg/m^3]
+		fp32_t G;							// Gravity [m/s^2]
+		fp32_t r;			                // Radius of the car wheel in [m]
+		fp32_t friction;			        // Friction coefficient of the wheel [-]
+		fp32_t Cw;			                // Air drag coefficient [-]
+		fp32_t A_car;						// Front area of car [m^2]
+		fp32_t i_gear;						// Gear ratio
+		fp32_t gear_efficiency;			 	// Gear efficiency
+		fp32_t velocity_lim_0;				// Optional
+		fp32_t velocity_lim_1;				// Optional
+	} EV;
 
-		}EV;
+	struct ElevatorStruct {
+		fp32_t mass_elevator;			    // Mass of the elevator in [kg]
+		fp32_t mass_load;					// Mass of the load in [kg]
+		fp32_t i_gear;						// Gear ratio
+		fp32_t gear_efficiency;			 	// Gear efficiency
+		fp32_t p_0;							// Optional
+		fp32_t p_1;							// Optional
+	} Elevator;
 
-	struct ShipPropulsionStruct
-		{
-			fp32_t Kp;			                // Gain in pu for speed controller
-			fp32_t Ti;			                // Integral time constant [s]
-			fp32_t Ta;			                // Filter time constant (not in use)
-			fp32_t Kv;			                // Feedforward gain. Usually 0 or 1 in our applications
+	struct ShipPropulsionStruct {
+		fp32_t p_0;							// Optional
+		fp32_t p_1;							// Optional
+	} Ship;
 
-		}Ship;
+	struct WindPowerStruct {
+		fp32_t p_0;							// Optional
+		fp32_t p_1;							// Optional
+	} Wind;
 
-	struct WindPowerStruct
-		{
-			fp32_t Kp;			                // Gain in pu for speed controller
-			fp32_t Ti;			                // Integral time constant [s]
-			fp32_t Ta;			                // Filter time constant (not in use)
-			fp32_t Kv;			                // Feedforward gain. Usually 0 or 1 in our applications
-
-		}Wind;
-
-	struct HydroPowerStruct
-		{
-			fp32_t Kp;			                // Gain in pu for speed controller
-			fp32_t Ti;			                // Integral time constant [s]
-			fp32_t Ta;			                // Filter time constant (not in use)
-			fp32_t Kv;			                // Feedforward gain. Usually 0 or 1 in our applications
-
-		}Hydro;
+	struct HydroPowerStruct {
+		fp32_t p_0;							// Optional
+		fp32_t p_1;							// Optional
+	} Hydro;
 
 };

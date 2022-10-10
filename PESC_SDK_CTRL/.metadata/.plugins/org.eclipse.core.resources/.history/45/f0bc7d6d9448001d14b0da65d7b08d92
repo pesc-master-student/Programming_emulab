@@ -22,9 +22,9 @@ void LoadEmulator::Initialize(void){
     m_EVData.Cw     			= Parameters.Load1.EV.Cw;
     m_EVData.A_car      		= Parameters.Load1.EV.A_car;
     m_EVData.i_gear  			= Parameters.Load1.EV.i_gear;
-    m_EVData.gear_efficiency 	= Parameters.Load1.EV.gear_efficiency;
-    m_EVData.velocity_lim_0 	= Parameters.Load1.EV.velocity_lim_0;
-    m_EVData.velocity_lim_1 	= Parameters.Load1.EV.velocity_lim_1;
+    m_EVData.gear_efficiency 		= Parameters.Load1.EV.gear_efficiency;
+    m_EVData.velocity_lim_0 		= Parameters.Load1.EV.velocity_lim_0;
+    m_EVData.velocity_lim_1 		= Parameters.Load1.EV.velocity_lim_1;
 
     m_ElevatorData.m_elevator 		= Parameters.Load1.Elevator.mass_elevator;
     m_ElevatorData.m_load 			= Parameters.Load1.Elevator.mass_load;
