@@ -1,4 +1,4 @@
-# Programming_emulab
+# Programming Emulator Lab - Electric Motor Drive (DC)
  
 Repository for emulator lab in TET4120 Electric Drives Course NTNU. Models a DC machine. Most of the software stack comes as a precompiled static library file. Only the SwLoadEmulator.cpp/.hpp must be changed according to students needs. The group_00 subfolder contains templates for WatchView and Datalogger and a pre-configured Database.
 
@@ -19,3 +19,6 @@ Repository for emulator lab in TET4120 Electric Drives Course NTNU. Models a DC 
   * Subfolder 'lib' includes third-party library from The Switch needed to run the Linux OS on CPU_0 and static library of the electric drives application running on CPU_1
   * Subfolder 'src' is a distilled version of the original application project. Only 'main.cpp', 'SwLoadEmulator.cpp' and 'SwLoadEmulator.hpp' source files in this source folder. These will be compiled and linked together with above mentioned static libraries. The 'main.cpp' must not be edited, while the other two can be edited to model any of the five mechanical loads.
   
+## Hardware Requirements
+
+## Third-party Tools Required
