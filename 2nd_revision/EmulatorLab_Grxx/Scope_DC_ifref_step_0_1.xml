@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<root>
+  <Probe>
+    <Index>0</Index>
+    <Name>PwmInt</Name>
+    <SampleTime>Not available</SampleTime>
+  </Probe>
+  <Trigger>
+    <TriggerVariable Alias="">Drive1.m_if_ref_pu</TriggerVariable>
+    <TriggerCondition>4</TriggerCondition>
+    <TriggerValue>0.1</TriggerValue>
+  </Trigger>
+  <Variables>
+    <Variable Alias="">Drive1.m_u.f</Variable>
+    <Variable Alias="">Drive1.m_if_ref_pu</Variable>
+    <Variable Alias="">Drive1.m_i.f</Variable>
+  </Variables>
+  <Sampling>
+    <PreSamples>100</PreSamples>
+    <PostSamples>2000</PostSamples>
+    <Downsampling>0</Downsampling>
+  </Sampling>
+  <Graph>
+    <GraphWindows>2</GraphWindows>
+    <GraphSeries>
+      <GraphSerie Name="Drive1.m_u.f" Index="1" />
+      <GraphSerie Name="Drive1.m_if_ref_pu" Index="0" />
+      <GraphSerie Name="Drive1.m_i.f" Index="0" />
+    </GraphSeries>
+    <GraphWindowsConfig>
+      <GraphWindow>
+        <Index>0</Index>
+        <ShowWatermark>False</ShowWatermark>
+      </GraphWindow>
+      <GraphWindow>
+        <Index>1</Index>
+        <ShowWatermark>False</ShowWatermark>
+      </GraphWindow>
+    </GraphWindowsConfig>
+  </Graph>
+</root>

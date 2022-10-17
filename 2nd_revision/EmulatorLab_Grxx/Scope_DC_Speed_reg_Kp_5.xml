@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="us-ascii"?>
+<root>
+  <Probe>
+    <Index>0</Index>
+    <Name>PwmInt</Name>
+    <SampleTime>Not available</SampleTime>
+  </Probe>
+  <Trigger>
+    <TriggerVariable Alias="">App1.m_PLC.speed_ref</TriggerVariable>
+    <TriggerCondition>4</TriggerCondition>
+    <TriggerValue>0.1</TriggerValue>
+  </Trigger>
+  <Variables>
+    <Variable Alias="">App1.m_PLC.speed_ref</Variable>
+    <Variable Alias="">App1.m_SpeedRef_pu</Variable>
+    <Variable Alias="">App1.m_actual_values.speed</Variable>
+    <Variable Alias="">Drive1.m_te.ref_used</Variable>
+    <Variable Alias="">Drive1.m_te.estimated</Variable>
+  </Variables>
+  <Sampling>
+    <PreSamples>1000</PreSamples>
+    <PostSamples>50000</PostSamples>
+    <Downsampling>0</Downsampling>
+  </Sampling>
+  <Graph>
+    <GraphWindows>2</GraphWindows>
+    <GraphSeries>
+      <GraphSerie Name="App1.m_PLC.speed_ref" Index="0" />
+      <GraphSerie Name="App1.m_SpeedRef_pu" Index="0" />
+      <GraphSerie Name="App1.m_actual_values.speed" Index="0" />
+      <GraphSerie Name="Drive1.m_te.ref_used" Index="1" />
+      <GraphSerie Name="Drive1.m_te.estimated" Index="1" />
+    </GraphSeries>
+    <GraphWindowsConfig>
+      <GraphWindow>
+        <Index>0</Index>
+        <ShowWatermark>False</ShowWatermark>
+      </GraphWindow>
+      <GraphWindow>
+        <Index>1</Index>
+        <ShowWatermark>False</ShowWatermark>
+      </GraphWindow>
+    </GraphWindowsConfig>
+  </Graph>
+</root>
